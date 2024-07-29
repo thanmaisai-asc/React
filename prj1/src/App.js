@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Greet from './components/greet';
+import Message from './components/message'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <p>You can pass any elements here.</p>
         <button>test</button>
       </Greet>
+      <Message/>
     </div>
   );
 }
