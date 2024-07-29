@@ -55,3 +55,17 @@ Key Points:
 `Function-Based Components`: Preferred for simplicity, readability, and the power of Hooks. Use these for most components.
 
 `Class-Based Components`: Use if you are maintaining older codebases or need to use lifecycle methods without Hooks.
+
+
+| Feature                   | Function-Based Components            | Class-Based Components          |
+|---------------------------|---------------------------------------|----------------------------------|
+| Definition                | JavaScript function returning JSX     | ES6 class extending `React.Component` |
+| Simplicity                | Simple and concise                    | More verbose                     |
+| State Management          | Uses React Hooks (e.g., `useState`)   | Uses `this.state` and `this.setState` |
+| Lifecycle Methods         | Managed with Hooks (e.g., `useEffect`) | Built-in lifecycle methods (e.g., `componentDidMount`) |
+| Readability               | Generally easier to read and understand | Can be more complex and harder to read |
+| Performance               | Slightly more performant due to simpler structure | Slightly less performant due to additional overhead |
+| Usage Recommendation      | Preferred for new projects and most use cases | Used for maintaining older codebases or specific scenarios requiring traditional lifecycle methods |
+| Learning Curve            | Easier for beginners                  | Steeper learning curve           |
+| Support for Pure Components | Yes, inherently functions as pure components | Requires explicit declaration with `React.PureComponent` |
+| Handling Props            | Directly via function parameters      | Accessed through `this.props`    |
