@@ -1,7 +1,11 @@
 import React from 'react';
 
 export default function Greet(props) {
+    console.log(props);
     return (
-        <h1>Welcome to react {props.name}</h1>
+        <div>
+            <h1>Welcome to React, {props.name}, you are {props.age} old</h1>
+            <div>{props.children}</div>
+        </div>
     );
 }
