@@ -1,7 +1,8 @@
 import React from 'react';
 
-export default function Greet({name,age}) {
-    console.log(name + " " + age);
+export default function Greet(props) {
+    const {name,age} = props
+    // console.log(name + " " + age);
     return (
         <div>
             <h1>Welcome to React, {name}, you are {age} old</h1>
