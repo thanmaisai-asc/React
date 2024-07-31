@@ -1,6 +1,7 @@
 import React from 'react';
 import HookCounter from "./hooks/HookCounter";
 import ClassCounter from "./hooks/ClassCounter";
+import HookCountertwo from './hooks/HookCoutertwo';
 
 //install axios
 function App() {
@@ -10,6 +11,8 @@ function App() {
       <HookCounter />
      <h1>Using class based component</h1>
       <ClassCounter/>
+      <h1>Hook counter 2</h1>
+      <HookCountertwo/>
     </div>
   );
 }
