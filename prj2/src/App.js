@@ -8,6 +8,8 @@ import NoMatch from '../src/components/Nomatch'
 import Products from './components/Products';
 import FeaturedProducts from '../src/components/FearturedProducts';
 import NewProducts from '../src/components/NewProducts';
+import UserDetails from './components/Userdetails';
+import Users from './components/Users';
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/order-summary' element={<OrderSummary />} />
         <Route path="*" element={<NoMatch />} />
+        <Route path="users" element={<Users />}>
+          <Route path=":userId" element={<UserDetails />}></Route>
+        </Route>
       </Routes>
     </div>
   );
