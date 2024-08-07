@@ -5,36 +5,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 nav {
   background-color: #1a1a1a; /* Dark gray background */
   padding: 20px 40px; /* More padding for a spacious look */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:left;
+  margin-bottom: 10px;
 } 
-
 nav a {
-  margin-right: 20px; /* Increased margin */
-  color: #f0f0f0; /* Light gray color for text */
+  margin-right: 20px;
+  color: #f0f0f0;
   text-decoration: none;
-  font-weight: 500; /* Medium font weight */
-  font-size: 18px; /* Larger font size */
+  font-weight: 500;  
+  font-size: 18px; 
 }
 
 nav a:hover {
-  color: #ffcc00; /* Yellow color on hover */
+  color: #ffcc00;
   text-decoration: underline;
 }
 
 nav a.active {
   text-decoration: none;
   font-weight: bolder;
-  color: #ffcc00; /* Yellow color for active link */
+  color: #ffcc00;
 }

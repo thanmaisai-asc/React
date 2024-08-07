@@ -7,7 +7,7 @@ export default function OrderSummary() {
   return (
     <>
     <div>Order is being dispatched</div>
-    <button onClick={()=>navigate(-2)} >go back</button>
+    <button onClick={()=>navigate('/',{replace:true})} >go back</button>
     </>
   )
 }
