@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet,Link } from 'react-router-dom';
 
 export default function Products() {
   const linkStyles = ({ isActive }) => ({
@@ -15,8 +15,8 @@ export default function Products() {
         <input type="search" placeholder="Search products" />
       </div>
       <nav>
-        <NavLink  to="featured" style={linkStyles}>Featured products</NavLink>
-        <NavLink to="new" style={linkStyles}>New products</NavLink>
+        <Link to="/products/featured"> Featured products</Link>
+        <Link to="/products/new"> New products</Link>
       </nav>
       <Outlet />
     </>
