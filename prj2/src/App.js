@@ -16,17 +16,19 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path="/products" element={<Products />}>
-        <Route index element={<FeaturedProducts />} />
-          <Route path="featured" element={<FeaturedProducts />} />
-          <Route path="new" element={<NewProducts />} />
-        </Route>
-        <Route path='/about' element={<About />} />
-        <Route path='/order-summary' element={<OrderSummary />} />
-        <Route path="*" element={<NoMatch />} />
+        {/* add two more pages */}
+
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/order-summary" element={<OrderSummary />}></Route>
+        <Route path="*" element={<NoMatch />}></Route>
         <Route path="users" element={<Users />}>
           <Route path=":userId" element={<UserDetails />}></Route>
+        </Route>
+        <Route path="/products" element={<Products />}>
+          <Route index element={<FeaturedProducts />} />
+          <Route path="featured" element={<FeaturedProducts />} />
+          <Route path="new" element={<NewProducts />} />
         </Route>
       </Routes>
     </div>
