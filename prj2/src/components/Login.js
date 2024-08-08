@@ -1,16 +1,18 @@
 import React from 'react'
 import { useState } from 'react'
 import {useAuth} from './utils/auth'
-import { useNavigate } from 'react-router-dom'
+import {useLocation, useNavigate } from 'react-router-dom'
 
 export default function Login() {
     const [user,setUser] = useState('')
     const auth = useAuth()
     const navigate = useNavigate()
+    const location = useLocation()
+    const rediretPath = location.state?.path || '/'
 
 const handleLogin = () => {
     auth.login(user)
-    navigate('/')
+    navigate(rediretPath,{replace:true})
 }
 
   return (
